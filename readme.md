@@ -20,7 +20,7 @@ RESTful API built with python and Flask.
  - *Using docker*
 
     1. Build image
-        > docker build . glide-projec 
+        > docker build . -t glide-project
 
     2. Run at port XXXX (change XXXX for actual port)
         > docker run --env-file prod.env -d -p XXXX:5000 glide-project
