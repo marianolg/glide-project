@@ -8,8 +8,5 @@ RUN pip install --no-cache -r requirements.txt
 
 EXPOSE 5000
 
-ARG startcmd="gunicorn --bind 0.0.0.0:5000 -w 1 wsgi:app"
-ENV startcmd=$startcmd
-
 ENTRYPOINT ["/bin/bash", "-c"]
 CMD ["gunicorn --bind 0.0.0.0:5000 -w 1 wsgi:app"]
