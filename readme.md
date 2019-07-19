@@ -26,10 +26,10 @@ RESTful API built with python and Flask.
         > docker run --env-file prod.env -d -p XXXX:5000 glide-project
 
     3. Run with dev config at port XXXX (change XXXX for actual port)
-        > docker run --env-file dev.env -d -p XXXX:5000 --env startcmd="flask run --host 0.0.0.0 -p 5000" glide-project
+        > docker run --env-file dev.env -d -p XXXX:5000 glide-project "flask run --host 0.0.0.0 -p 5000"
 
     4. Run tests
-        > docker run --env-file dev.env --env startcmd="pytest -W ignore" glide-project
+        >  docker run --env-file dev.env glide-project "pytest -W ignore"
 
 ---
 
